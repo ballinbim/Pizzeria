@@ -4,7 +4,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pizzeria.settings")
 import django
 django.setup()
 
-from pizza.models import Pizza
+from pizzas.models import Pizza
 
 pizzas = Pizza.objects.all()
 
