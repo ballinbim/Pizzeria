@@ -13,7 +13,7 @@ def pizzas(request):
     return render(request, 'pizzas/pizzas.html', context)
 
 def toppings(request):
-    topping = Topping.objects.order_by('date_added')
+    toppings = Topping.objects.order_by('date_added')
     pizzas = Topping.pizzas_set.order_by('date_added')
     context = {'toppings': toppings, 'pizzas':pizzas}
     return render(request, 'pizzas/toppings.html', context)
