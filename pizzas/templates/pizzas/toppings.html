@@ -6,8 +6,8 @@
     <ul>
         {% for pizza in pizzas %}
             <li>
-                <p>{{ toppings.date_added }}</p>
-                <p>{{ toppings.text }}</p>
+                <p>{{ pizza.date_added }}</p>
+                <p>{{ pizza.text }}</p>
             </li>
         {% empty %}
             <li>There are no toppings for this pizza yet.</li>
